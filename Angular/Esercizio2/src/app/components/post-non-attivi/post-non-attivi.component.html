@@ -1,0 +1,21 @@
+<h2 class="text-center">Post Non Attivi</h2>
+
+<div *ngFor="let item of array">
+
+  <div *ngIf="!item.active">
+
+    <div class="card border-danger mt-4 my_card">
+      <div class="card-body">
+        <h5 class="card-title">{{item.title}}</h5>
+        <p class="card-text">{{item.body}}</p>
+        <p class="card-text">{{item.id}}</p>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+</div>
+
