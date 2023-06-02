@@ -1,0 +1,20 @@
+#my_input{
+  padding: 10px;
+  border: 1px solid blue;
+}
+
+#aggiungi{
+    border-radius: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    border: none;
+}
+
+#aggiungi:hover{
+  background-color: #71d475;
+  transform: scale(1.3);
+
+}

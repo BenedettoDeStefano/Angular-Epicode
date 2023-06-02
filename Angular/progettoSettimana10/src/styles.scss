@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  height: 100vh;
+  background: linear-gradient(#df47bc, #3a48e3);
+}
+
+ul{
+  padding: 0;
+}
+
+li:hover{
+  cursor: pointer;
+  transition: background-color 0.5s;
+  background-color: #3682f3;
+  color: white;
+}
+
+#body_todo{
+  min-height: 600px;
+  box-shadow: 5px 1px 15px 0px;
+}
+
+
