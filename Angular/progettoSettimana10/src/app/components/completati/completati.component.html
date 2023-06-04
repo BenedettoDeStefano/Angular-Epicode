@@ -6,7 +6,7 @@
 <div *ngIf="!isLoading">
   <h2 class="text-center">Task Completati</h2>
   <div>
-    <ng-container *ngIf="tasks.length!== 0; else errorMessage">
+    <ng-container *ngIf="tasks.length!== 0 && completeTask(); else errorMessage">
       <ul *ngFor="let item of tasks">
         <li *ngIf="item.completed"
           class="list-unstyled text-center text-decoration-line-through d-flex justify-content-center align-items-center">

@@ -11,71 +11,55 @@ import { Task } from 'src/app/models/task.interface';
 export class TodoComponent implements OnInit {
 
   tasks!: Task[];
-  todoItem : string = ''
+  todoItem: string = ''
 
-  constructor(private taskSrv : TaskService, ) {
+  constructor(private taskSrv: TaskService,) {
     this.tasks = taskSrv.tasks;
   }
 
   onItemAdd() {
-   const todoItems :Task = {
-      id: this.tasks.length +1,
+    const todoItems: Task = {
+      id: this.tasks.length + 1,
       title: this.todoItem,
-      completed:false
+      completed: false
     }
     this.taskSrv.onItemAdd(todoItems)
     console.log(this.tasks)
     this.todoItem = ''
+    this.animationLoad()
   }
 
 
   deleteTask(task: Task): void {
     this.taskSrv.deleteTask(task)
+    this.animationLoad()
   }
 
 
-  changePag(item: Task): void{
+  changePag(item: Task): void {
     this.taskSrv.changePag(item);
+    this.animationLoad()
   }
 
 
   isLoading: boolean = true;
-
   ngOnInit(): void {
     setTimeout(() => {
       this.isLoading = false;
     }, 2000);
   }
 
+  loadClick: boolean = false
+  animationLoad(): void {
+    this.loadClick = true;
+    setTimeout(() => {
+      this.loadClick = false;
+    }, 2000);
+
+  }
+
+  completeTask():boolean{
+    return this.tasks.some(i => !i.completed);
+  }
+
 }
-
-
-
-
-
-
-  // messaggio():boolean {
-  //   return this.tasks.some(item => {
-  //     item.completed = !item.completed;
-  //   })
-  // }
-
-
-// changeBool(task: Task): void {
-  //   task.completed = !task.completed;
-
-  // }
-
-  // deleteTask(task: any): void {
-  //   this.tasks = this.tasks.filter(t => t !== task);
-  // }
-
-
-  // attivaClasse() {
-  //   if(this.todoItem. === false){
-  //     this.todoItem.completed = true;
-  //   }else {
-  //     this.todoItem.completed = false
-  //   }
-  //   console.log(this.todoItem.completed)
-  // }

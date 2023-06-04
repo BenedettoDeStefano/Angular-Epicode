@@ -16,6 +16,11 @@ export class CompletatiComponent implements OnInit {
   }
 
 
+  completeTask():boolean{
+    return !this.tasks.some(i => !i.completed);
+  }
+
+
   isLoading: boolean = true;
   ngOnInit():void  {
     setTimeout(() => {

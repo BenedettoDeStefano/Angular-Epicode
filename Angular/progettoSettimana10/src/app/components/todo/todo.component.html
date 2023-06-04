@@ -12,7 +12,11 @@
         class="bi bi-plus-lg"></i></button>
   </div>
 
-  <ng-container *ngIf="tasks.length!== 0; else errorMessage">
+  <div *ngIf="loadClick" class="d-flex justify-content-center">
+    <div class="spinner-grow text-primary animated" role="status"></div>
+  </div>
+
+  <ng-container *ngIf="tasks.length!== 0 && completeTask(); else errorMessage">
     <ul *ngFor="let item of tasks" class="p-0">
       <li *ngIf="!item.completed" class="list-unstyled border-top border-bottom mt-4 d-flex justify-content-between">
         <div>

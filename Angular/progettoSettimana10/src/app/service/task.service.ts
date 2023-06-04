@@ -41,9 +41,4 @@ export class TaskService {
   }
 
 
-
- // changeBool(task: Task): void {
-  //   task.completed = !task.completed;
-  // }
-
 }
