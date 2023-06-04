@@ -11,10 +11,18 @@ import { Task } from 'src/app/models/task.interface';
 export class TodoComponent implements OnInit {
 
   tasks!: Task[];
-  todoItem: string = ''
+  todoItem: string = '';
+  isLoading: boolean = true;
 
   constructor(private taskSrv: TaskService,) {
     this.tasks = taskSrv.tasks;
+  }
+
+
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 2000);
   }
 
   onItemAdd() {
@@ -41,13 +49,6 @@ export class TodoComponent implements OnInit {
     this.animationLoad()
   }
 
-
-  isLoading: boolean = true;
-  ngOnInit(): void {
-    setTimeout(() => {
-      this.isLoading = false;
-    }, 2000);
-  }
 
   loadClick: boolean = false
   animationLoad(): void {

@@ -9,19 +9,13 @@ import { Task } from 'src/app/models/task.interface';
 })
 export class CompletatiComponent implements OnInit {
   tasks!: Task[];
-
+  isLoading: boolean = true;
 
   constructor(private taskSrv : TaskService) {
     this.tasks = taskSrv.tasks;
   }
 
 
-  completeTask():boolean{
-    return !this.tasks.some(i => !i.completed);
-  }
-
-
-  isLoading: boolean = true;
   ngOnInit():void  {
     setTimeout(() => {
       this.isLoading = false;
@@ -29,4 +23,11 @@ export class CompletatiComponent implements OnInit {
     }, 2000);
 
   }
+
+  completeTask():boolean{
+    return !this.tasks.some(i => !i.completed);
+  }
+
+
+
  }

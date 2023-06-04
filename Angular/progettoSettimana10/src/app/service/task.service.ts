@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Task } from '../models/task.interface';
-import { identifierName } from '@angular/compiler';
 
 
 
@@ -36,8 +35,6 @@ export class TaskService {
       item.completed = !item.completed;
 
     }, 2000);
-
-
   }
 
 
