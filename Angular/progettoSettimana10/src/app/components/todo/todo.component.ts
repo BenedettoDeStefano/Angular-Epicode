@@ -25,7 +25,7 @@ export class TodoComponent implements OnInit {
     }, 2000);
   }
 
-  onItemAdd() {
+  Add() {
     const todoItems: Task = {
       id: this.tasks.length + 1,
       title: this.todoItem,
@@ -34,24 +34,24 @@ export class TodoComponent implements OnInit {
     this.taskSrv.onItemAdd(todoItems)
     console.log(this.tasks)
     this.todoItem = ''
-    this.animationLoad()
+    this.animation()
   }
 
 
-  deleteTask(task: Task): void {
+  deleteT(task: Task): void {
     this.taskSrv.deleteTask(task)
-    this.animationLoad()
+    this.animation()
   }
 
 
-  changePag(item: Task): void {
+  change(item: Task): void {
     this.taskSrv.changePag(item);
-    this.animationLoad()
+    this.animation()
   }
 
 
   loadClick: boolean = false
-  animationLoad(): void {
+  animation(): void {
     this.loadClick = true;
     setTimeout(() => {
       this.loadClick = false;

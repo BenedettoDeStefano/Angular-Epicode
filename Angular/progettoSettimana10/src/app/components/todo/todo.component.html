@@ -8,7 +8,7 @@
   <div class="position-relative">
     <input type="text" placeholder="inserisci nuovo elemento" id="my_input" class="form-control" [(ngModel)]="todoItem">
     <br>
-    <button class="btn btn-primary btn-lg position-absolute bottom-0 end-0" id="aggiungi" (click)="onItemAdd()"><i
+    <button class="btn btn-primary btn-lg position-absolute bottom-0 end-0" id="aggiungi" (click)="Add()"><i
         class="bi bi-plus-lg"></i></button>
   </div>
 
@@ -23,9 +23,9 @@
           {{item.title}}
         </div>
         <div>
-          <button class="btn btn-danger btn-sm me-2 rounded-circle" (click)="deleteTask(item);">
+          <button class="btn btn-danger btn-sm me-2 rounded-circle" id="deleteBtn" (click)="deleteT(item);">
             <i class="bi bi-trash3-fill"></i></button>
-          <button class="btn btn-success btn-sm rounded-circle" (click)="changePag(item)"><i
+          <button class="btn btn-success btn-sm rounded-circle" id="checkBtn" (click)="change(item)"><i
               class="bi bi-check2-circle"></i></button>
         </div>
       </li>
