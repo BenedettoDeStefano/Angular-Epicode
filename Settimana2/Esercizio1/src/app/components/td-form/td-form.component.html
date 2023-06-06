@@ -23,9 +23,9 @@
             <label for="power">power</label>
             <select name="power" id="power" [(ngModel)]="userForm.fPower" class="form-control" required #power="ngModel">
               <option value="">Seleziona</option>
-              <option value="Flight">raggiX</option>
-              <option value="Super Strength">Volo</option>
-              <option value="Invisibility">Invisibilità</option>
+              <option value="raggiX">raggiX</option>
+              <option value="Volo">Volo</option>
+              <option value="Invisibilità">Invisibilità</option>
             </select>
             <p *ngIf="power.invalid && power.touched"><strong>Questo campo è obbligatorio</strong></p>
           </div>
