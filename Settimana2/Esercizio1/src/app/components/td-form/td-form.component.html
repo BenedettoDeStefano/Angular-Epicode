@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <form (ngSubmit)="submitForm()" #contenitoreForm="ngForm">
+        <div ngModelGroup="userInfo" id="userInfo" #userGroup="ngModelGroup">
+
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" [ngModel]="userForm.fName" class="form-control" required
+              #name="ngModel">
+            <p *ngIf="name.invalid && name.touched"><strong>Questo campo è
+                obbligatorio</strong></p>
+          </div>
+
+          <div class="form-group">
+            <label for="alterEgo">alterEgo</label>
+            <input type="text" name="alterEgo" id="alterEgo" [ngModel]="userForm.fAlterEgo" class="form-control" required #alterEgo="ngModel">
+            <p *ngIf="alterEgo.invalid && alterEgo.touched"><strong>Questo campo è
+                obbligatorio</strong></p>
+          </div>
+
+          <div class="form-group">
+            <label for="power">power</label>
+            <select name="power" id="power" [(ngModel)]="userForm.fPower" class="form-control" required #power="ngModel">
+              <option value="">Seleziona</option>
+              <option value="Flight">raggiX</option>
+              <option value="Super Strength">Volo</option>
+              <option value="Invisibility">Invisibilità</option>
+            </select>
+            <p *ngIf="power.invalid && power.touched"><strong>Questo campo è obbligatorio</strong></p>
+          </div>
+
+
+          <div class="form-group">
+            <label for="enemy">enemy</label>
+            <input type="text" name="enemy" id="enemy" [ngModel]="userForm.fEnemy" class="form-control" required #enemy="ngModel" maxlength="10">
+            <p *ngIf="enemy.invalid && enemy.touched"><strong>Questo campo è
+                obbligatorio e deve conteere massimo 10 caratteri</strong></p>
+          </div>
+
+          <div class="form-group">
+            <label for="planet">planet</label>
+            <input type="text" name="planet" id="planet" [ngModel]="userForm.fPlanet" class="form-control" required #planet="ngModel" minlength="5">
+            <p *ngIf="planet.invalid && planet.touched"><strong>Questo campo è
+                obbligatorio e deve contenere almeno 5 caratteri</strong></p>
+          </div>
+
+          <div class="form-group">
+            <label for="weakness">weakness</label>
+            <input type="text" name="weakness" id="weakness" [ngModel]="userForm.fWeakness" class="form-control" #power="ngModel">
+          </div>
+
+
+
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg mt-2 " [disabled]="contenitoreForm.invalid">Crea</button>
+      </form>
+    </div>
+  </div>
+</div>
+
