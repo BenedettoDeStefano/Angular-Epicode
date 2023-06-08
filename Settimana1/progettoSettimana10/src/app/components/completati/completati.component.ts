@@ -25,7 +25,7 @@ export class CompletatiComponent implements OnInit {
   }
 
   completeTask():boolean{
-    return !this.tasks.some(i => !i.completed);
+    return this.tasks.some(i => i.completed);
   }
 
 
