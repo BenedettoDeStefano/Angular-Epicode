@@ -1,0 +1,18 @@
+#my_card{
+  background-color: black;
+  border: 1px solid rgb(26, 19, 19);
+  transition: 0.5s all ease;
+}
+
+#my_card:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+  z-index: 1;
+}
+
+
+#like:hover{
+ background-color: red;
+}
+
+

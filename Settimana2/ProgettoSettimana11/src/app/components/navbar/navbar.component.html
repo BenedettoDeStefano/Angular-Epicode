@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid ">
+    <div class="collapse navbar-collapse d-flex justify-content-evenly" id="navbarNav">
+      <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Amazon_Prime_Video_logo.svg/1280px-Amazon_Prime_Video_logo.svg.png" style="width: 100px;">
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link active text-white" [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Login </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" [routerLink]="['/sign-in']" routerLinkActive="active">Registrati</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" [routerLink]="['/movies']" routerLinkActive="active">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" [routerLink]="['/profile']" routerLinkActive="active">profil</a>
+        </li>
+      </ul>
+      <div class="d-flex align-items-center">
+        <i class="bi bi-search text-white"></i>
+        <a href="#" class="d-flex align-items-center justify-content-center p-3 link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png" alt="mdo" width="24" height="24" class="rounded-circle">
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
