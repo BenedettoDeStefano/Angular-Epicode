@@ -1,1 +1,29 @@
-<p>sign-in works!</p>
+<section id="back">
+  <div class="d-flex justify-content-center mt-4 mb-4">
+    <img src="../../../assets/img/AV_Logo_150._CB430404026_.png" alt="">
+  </div>
+  <div class="container" id="my_container">
+    <h4>Accedi</h4>
+    <form #form="ngForm">
+      <div class="form-group">
+        <label for="name">nome</label> <br>
+        <input type="name" id="name" name="name" class="form-control" required ngModel>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label> <br>
+        <input type="email" id="email" name="email" class="form-control" required ngModel>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label> <br>
+        <input type="password" id="password" name="password" class="form-control" required ngModel>
+      </div>
+      <button type="submit" class="btn mt-3 my_btn_yellow"  [disabled]="form.invalid">Iscrivit</button>
+    </form>
+    <p class="mt-4">Continuando, accetti le Condizioni di utilizzo di Amazon. Consulta <span class="text-primary">l’Informativa sulla privacy,
+        l’Informativa sui cookie e l’Informativa sulla pubblicità basata sugli interessi personali.
+      </span></p>
+    <input type="checkbox"> Resta connesso.
+    <p class="mt-4 opacity-50 d-flex justify-content-center">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</p>
+    <p>Disponi già di un accoun <a class="text-primary" [routerLink]="['/login']" >Accedi</a></p>
+  </div>
+</section>

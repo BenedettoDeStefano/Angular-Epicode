@@ -16,3 +16,12 @@
 }
 
 
+#my_like  {
+  color: white;
+  transition: 0.2s all ease;
+}
+
+#my_like:hover  {
+  cursor: pointer;
+  color: red;
+}

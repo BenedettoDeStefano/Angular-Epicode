@@ -10,10 +10,16 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { Route, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './components/home/home.component';
 
 const rotte: Route[] = [
+
   {
     path: '',
+    component: HomeComponent
+  },
+  {
+    path: 'login',
     component: LoginComponent
   },
   {
@@ -37,7 +43,8 @@ const rotte: Route[] = [
     SignInComponent,
     NavbarComponent,
     MoviesComponent,
-    ProfileComponent
+    ProfileComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
