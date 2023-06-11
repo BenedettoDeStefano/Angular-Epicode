@@ -11,6 +11,7 @@ import { Route, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
+import { AuthGuard } from './auth/auth.guard';
 
 const rotte: Route[] = [
 
@@ -28,11 +29,13 @@ const rotte: Route[] = [
   },
   {
     path: 'movies',
-    component: MoviesComponent
+    component: MoviesComponent,
+    // canActivate: [AuthGuard]
   },
   {
     path: 'profile',
-    component: ProfileComponent
+    component: ProfileComponent,
+    canActivate: [AuthGuard]
   },
 ]
 

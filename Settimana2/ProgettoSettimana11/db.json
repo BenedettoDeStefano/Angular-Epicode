@@ -29,6 +29,12 @@
       "password": "$2a$10$dUc3jYtuRxxmnln0QZn.ZeJPDfdXmW/QCPKLmVJ31FiOXe1wZoir2",
       "name": "Gabriel",
       "id": 5
+    },
+    {
+      "email": "aaa@aaa.it",
+      "password": "$2a$10$qf4uEKkLr7sEHEUl/vbyseMbjt0NuLrtsklJ8rPE4FZ89vKBHWeey",
+      "name": "dsa",
+      "id": 6
     }
   ],
   "favorites": [

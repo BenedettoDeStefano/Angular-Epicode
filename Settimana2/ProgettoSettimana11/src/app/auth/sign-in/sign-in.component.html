@@ -4,7 +4,7 @@
   </div>
   <div class="container" id="my_container">
     <h4>Accedi</h4>
-    <form #form="ngForm">
+    <form #form="ngForm" (ngSubmit)="registra(form)">
       <div class="form-group">
         <label for="name">nome</label> <br>
         <input type="name" id="name" name="name" class="form-control" required ngModel>

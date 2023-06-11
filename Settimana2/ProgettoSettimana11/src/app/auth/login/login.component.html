@@ -4,7 +4,7 @@
   </div>
   <div class="container" id="my_container">
     <h4>Accedi</h4>
-    <form #form="ngForm">
+    <form #form="ngForm" (ngSubmit)="accedi(form)">
       <div class="form-group">
         <label for="email">Email</label> <br>
         <input type="email" id="email" name="email" class="form-control" required ngModel>
