@@ -30,7 +30,7 @@ const rotte: Route[] = [
   {
     path: 'movies',
     component: MoviesComponent,
-    // canActivate: [AuthGuard]
+    canActivate: [AuthGuard]
   },
   {
     path: 'profile',

@@ -35,6 +35,36 @@
       "password": "$2a$10$qf4uEKkLr7sEHEUl/vbyseMbjt0NuLrtsklJ8rPE4FZ89vKBHWeey",
       "name": "dsa",
       "id": 6
+    },
+    {
+      "email": "ooo@ooo.it",
+      "password": "$2a$10$bligswhw6Dy0Luhr3z13deusaJC3USwRHpLGmpok/T6TeFsBYzA/.",
+      "name": "ooo",
+      "id": 7
+    },
+    {
+      "email": "ben.des@gmail.com",
+      "password": "$2a$10$uhlu2IGxhp/29LX234pz8O9JhM6hSyFOGT6tJBYB4hob.uc5nfn2u",
+      "name": "benedetto",
+      "id": 8
+    },
+    {
+      "email": "maria@gmail.com",
+      "password": "$2a$10$N.u1rw8kdTy8bnANJLH1uuKmtfYwSOFj0Xo0ob3ZvH3YASgBUnw2S",
+      "name": "maria",
+      "id": 9
+    },
+    {
+      "email": "francesco@gmail.com",
+      "password": "$2a$10$677rPR2QNoj23lvtYFCyHuZKmFRWtFmKgtZOkxJNpTa1DmfFp47da",
+      "name": "francesco",
+      "id": 10
+    },
+    {
+      "email": "nunzio10@hotmail.it",
+      "password": "$2a$10$n7t4JR.ITAKeyms7iD4f..drb7UqJevgACgrZWzhSIDRwu6./T7nS",
+      "name": "nunzio",
+      "id": 11
     }
   ],
   "favorites": [
