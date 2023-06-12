@@ -71,6 +71,12 @@
       "password": "$2a$10$cz2pkvsNMUMIBF9OBQOuBuu2wo1AdzwuUdS7ZUL8qAgiYGpizmZ9S",
       "name": "orlando",
       "id": 12
+    },
+    {
+      "email": "olly@hotmail.it",
+      "password": "$2a$10$RJqek6XkEZmAXodclfwlzOjYNHAbG588HoAv5GCKIPoD6ir1OiJFm",
+      "name": "olly",
+      "id": 13
     }
   ],
   "favorites": [
