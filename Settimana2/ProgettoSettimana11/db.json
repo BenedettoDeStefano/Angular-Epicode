@@ -83,6 +83,12 @@
       "password": "$2a$10$ot1wSlxt7lLsemLM/3wF9ew04g/bNqxa47It64crZ/dXfnowpuyWm",
       "name": "lucaaaaa",
       "id": 14
+    },
+    {
+      "email": "giuseppe@gmail.com",
+      "password": "$2a$10$.yM4m3P7Y/Ih9gSwH7gYb.JVR08NoMWeNKPx94zVUR2KuS.792IPa",
+      "nome": "giuseppe",
+      "id": 15
     }
   ],
   "favorites": [
