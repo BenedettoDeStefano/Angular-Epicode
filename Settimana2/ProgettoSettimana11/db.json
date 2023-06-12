@@ -65,6 +65,12 @@
       "password": "$2a$10$n7t4JR.ITAKeyms7iD4f..drb7UqJevgACgrZWzhSIDRwu6./T7nS",
       "name": "nunzio",
       "id": 11
+    },
+    {
+      "email": "or@gmail.com",
+      "password": "$2a$10$cz2pkvsNMUMIBF9OBQOuBuu2wo1AdzwuUdS7ZUL8qAgiYGpizmZ9S",
+      "name": "orlando",
+      "id": 12
     }
   ],
   "favorites": [
