@@ -77,6 +77,12 @@
       "password": "$2a$10$RJqek6XkEZmAXodclfwlzOjYNHAbG588HoAv5GCKIPoD6ir1OiJFm",
       "name": "olly",
       "id": 13
+    },
+    {
+      "email": "lucaaaa@hotmail.it",
+      "password": "$2a$10$ot1wSlxt7lLsemLM/3wF9ew04g/bNqxa47It64crZ/dXfnowpuyWm",
+      "name": "lucaaaaa",
+      "id": 14
     }
   ],
   "favorites": [
@@ -139,6 +145,31 @@
       "userId": 5,
       "movieId": 460465,
       "id": 16
+    },
+    {
+      "userId": 8,
+      "movieId": 460465,
+      "id": 17
+    },
+    {
+      "userId": 8,
+      "movieId": 399566,
+      "id": 18
+    },
+    {
+      "userId": 8,
+      "movieId": 399566,
+      "id": 21
+    },
+    {
+      "userId": 8,
+      "movieId": 399566,
+      "id": 22
+    },
+    {
+      "userId": 8,
+      "movieId": 567189,
+      "id": 23
     }
   ],
   "genres": [

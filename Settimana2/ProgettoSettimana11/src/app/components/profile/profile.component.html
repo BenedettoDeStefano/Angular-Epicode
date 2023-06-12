@@ -1,1 +1,7 @@
-<p>profile works!</p>
+<div class="d-flex flex-column align-items-center">
+  <img src="https://www.advancedclinic.it/wp-content/uploads/2017/01/user-icon-png-pnglogocom.png" alt="" style="width: 200px;">
+  <div *ngIf="user">
+    <h2 class="text-white"><span class="text-primary">Id: </span> {{ user.user.id }} </h2>
+    <h2 class="text-white"><span class="text-primary">Email: </span> {{ user.user.email }}</h2>
+</div>
+</div>

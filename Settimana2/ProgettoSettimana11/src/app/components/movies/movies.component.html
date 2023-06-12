@@ -32,7 +32,8 @@
           <div class="d-flex justify-content-between align-items-center">
             <h5 class="card-title text-white">{{movie.title}}</h5>
 
-         <a href=""><span id="my_like"><i class="bi bi-heart-fill"></i></span></a>
+         <a (click)="gestisciPreferito(movie.id) " [class.like]="isPreferito(movie.id)"
+         [class.noLike]="!isPreferito(movie.id)"><span><i class="bi bi-heart-fill"></i></span></a>
           </div>
 
         </div>

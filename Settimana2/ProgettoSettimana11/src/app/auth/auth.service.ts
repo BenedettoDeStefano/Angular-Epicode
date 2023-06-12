@@ -30,6 +30,7 @@ export class AuthService {
     user$ = this.authSubj.asObservable();
     timeoutLogout: any;
 
+
     constructor(private http: HttpClient, private router: Router) {}
 
     login(data: { email: string; password: string }) {
@@ -104,4 +105,12 @@ export class AuthService {
         }
     }
 
+    getCurrentUserId(): number | null {
+      const user = localStorage.getItem('user');
+      if (user) {
+        const userData: Auth = JSON.parse(user);
+        return userData.user.id;
+      }
+      return null;
+    }
 }

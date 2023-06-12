@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Auth } from 'src/app/auth/auth.interface';
+import { AuthService } from 'src/app/auth/auth.service';
 
 @Component({
   selector: 'app-profile',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
+  user!:Auth
+
+  constructor(private authSrv : AuthService) { }
 
   ngOnInit(): void {
+
+  const userString = localStorage.getItem('user');
+  if (userString) {
+    this.user = JSON.parse(userString);
+  }
   }
 
 }
